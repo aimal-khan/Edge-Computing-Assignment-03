@@ -19,6 +19,7 @@ data/
 # Submission package and local archives
 *.zip
 i211701_A/
+starter_kit/
 
 # macOS system files
 .DS_Store
