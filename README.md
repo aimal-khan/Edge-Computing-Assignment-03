@@ -1,12 +1,5 @@
 # Edge Model Compression: Quantization, Pruning & Edge Deployment
 
-**Project**: Edge-Optimized Neural Compression Suite  
-**Course**: Edge Computing & Intelligent Systems (Fall 2026)  
-**Student**: Aimal Khan (`i211701`, Section `A`)  
-**Institution**: FAST NUCES  
-**Repository**: [github.com/aimal-khan/Edge-Computing-Assignment-03](https://github.com/aimal-khan/Edge-Computing-Assignment-03)  
-**Deliverable Archive**: `i211701_A.zip`  
-
 ---
 
 ## Overview
