@@ -1,7 +1,7 @@
 # Edge Model Compression: Quantization, Pruning & Edge Deployment
 
+**Project**: Edge-Optimized Neural Compression Suite  
 **Course**: Edge Computing & Intelligent Systems (Fall 2026)  
-**Assignment**: Assignment 03  
 **Student**: Aimal Khan (`i211701`, Section `A`)  
 **Institution**: FAST NUCES  
 **Repository**: [github.com/aimal-khan/Edge-Computing-Assignment-03](https://github.com/aimal-khan/Edge-Computing-Assignment-03)  
@@ -15,11 +15,11 @@ Deploying deep neural networks to battery-powered or low-power embedded processo
 
 This repository implements, evaluates, and deploys two model compression strategies on CIFAR-10 using a customized ResNet-18 backbone:
 
-1. **Integer Quantization (Question 1)**:
+1. **Integer Quantization**:
    - **Post-Training Static Quantization (PTQ)**: Fuses `Conv2d + BatchNorm2d + ReLU` operator chains, computes activation dynamic ranges over 500 calibration samples using PyTorch's `qnnpack` engine, and lowers numerical precision from 32-bit float to 8-bit integer.
    - **Quantization-Aware Training (QAT)**: Simulates rounding noise in the forward pass while propagating gradients through a Straight-Through Estimator (STE), recovering lost accuracy prior to final INT8 serialization.
 
-2. **Network Pruning (Question 2)**:
+2. **Neural Network Pruning**:
    - **Iterative Unstructured Pruning**: Eliminates weight elements with small $L_1$ magnitudes over a three-stage schedule until reaching 50% sparsity, fine-tunes between steps, and permanently bakes the binary masks into the weights.
    - **Structured Channel Pruning**: Ranks convolutional filters by their $L_2$ norm, prunes 30% of internal residual channels, and **physically reconstructs** smaller `nn.Conv2d` and `nn.BatchNorm2d` layers to produce real CPU speedups without needing sparse matrix software libraries.
 
@@ -51,8 +51,7 @@ All benchmarks were evaluated on the full 10,000-image CIFAR-10 test partition o
 
 ```
 Edge-Computing-Assignment-03/
-├── Assignment 3.pdf                  # Official course prompt and assignment rubric
-├── README.md                         # Project documentation and execution instructions
+├── README.md                         # Architecture overview, benchmark data, and execution guide
 ├── requirements.txt                  # Python dependencies
 ├── run_all.py                        # Master pipeline script running all steps sequentially
 │
@@ -100,7 +99,7 @@ Edge-Computing-Assignment-03/
 │
 └── report/
     ├── report.md                     # In-depth technical report with formulations
-    ├── Technical_Report_i211701_A.pdf# Formatted submission PDF with bold black headings
+    ├── Technical_Report_i211701_A.pdf# Formatted publication PDF with bold black headings
     ├── generate_plots.py             # Matplotlib script creating publication figures
     ├── generate_pdf.py               # ReportLab PDF compilation script
     └── plots/                        # Generated performance charts
@@ -112,9 +111,9 @@ Edge-Computing-Assignment-03/
 
 ---
 
-## Deliverables Checklist
+## Technical Deliverables Checklist
 
-| Rubric Requirement | Implementation Location | Verified Deliverable |
+| Technical Requirement | Implementation Location | Verified Deliverable |
 |:---|:---|:---:|
 | Baseline ResNet-18 model & training script | `q1_quantization/train_baseline.py` | `models/resnet18_fp32.pth` (83.62%) |
 | Post-Training Quantization (PTQ) & calibration | `q1_quantization/ptq.py` | `models/resnet18_ptq_int8.pth` (10.7 MB) |
