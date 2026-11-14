@@ -1,0 +1,4 @@
+Model,Accuracy (%),Latency per Image (ms),Model Size (MB),Parameters,Compression Ratio
+FP32 Baseline,83.62,9.299,42.70,11173962,1.00x
+PTQ-INT8,83.62,3.745,10.71,11173962,3.99x
+QAT-INT8,83.99,3.672,10.71,11173962,3.99x

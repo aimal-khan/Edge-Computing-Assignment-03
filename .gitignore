@@ -1,0 +1,28 @@
+# Python cache and environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# CIFAR-10 raw dataset download directory (downloaded automatically on first run)
+data/
+*.tar.gz
+*.tgz
+
+# Submission package and local archives
+*.zip
+i211701_A/
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes

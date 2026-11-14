@@ -1,0 +1,6 @@
+Technique,Model,Accuracy (%),Latency (ms/img),Model Size (MB),Parameters
+Baseline,FP32 Baseline,83.62,9.299,42.70,11173962
+Quantization,PTQ-INT8,83.62,3.745,10.71,11173962
+Quantization,QAT-INT8,83.99,3.672,10.71,11173962
+Pruning,Unstructured Pruned,84.35,9.253,42.70,11173962
+Pruning,Structured Pruned,83.52,7.454,30.09,7864834

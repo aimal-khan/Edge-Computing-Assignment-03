@@ -1,0 +1,4 @@
+Model,Accuracy (%),Latency per Image (ms),Total Parameters,Non-Zero Parameters,Sparsity (%),Model Size (MB),Param Reduction (%)
+Original FP32,83.62,9.263,11173962,11173962,0.00,42.70,0.00
+Unstructured Pruned,84.35,9.253,11173962,5591785,49.96,42.70,0.00
+Structured Pruned,83.52,7.454,7864834,7864834,0.00,30.09,29.61
