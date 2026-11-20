@@ -43,7 +43,7 @@ All benchmarks were evaluated on the full 10,000-image CIFAR-10 test partition o
 ## Directory Structure
 
 ```
-Edge-Computing-Assignment-03/
+edge-model-compression/
 ├── README.md                         # Architecture overview, benchmark data, and execution guide
 ├── requirements.txt                  # Python dependencies
 ├── run_all.py                        # Master pipeline script running all steps sequentially
@@ -127,8 +127,8 @@ Edge-Computing-Assignment-03/
 
 ```bash
 # Clone the repository
-git clone https://github.com/aimal-khan/Edge-Computing-Assignment-03.git
-cd Edge-Computing-Assignment-03
+git clone https://github.com/aimal-khan/edge-model-compression.git
+cd edge-model-compression
 
 # Create and activate a virtual environment
 python3 -m venv venv

@@ -100,7 +100,7 @@ def build_pdf_report(
         "<b>Affiliation:</b> FAST NUCES &nbsp;|&nbsp; "
         "<b>Author:</b> Aimal Khan (Roll: <b>i211701</b>, Sec: <b>A</b>)<br/>"
         "<b>Evaluation Platform:</b> Apple M1 (ARM64, 16 GB Unified Memory) &nbsp;|&nbsp; "
-        "<b>GitHub:</b> https://github.com/aimal-khan/Edge-Computing-Assignment-03"
+        "<b>GitHub Repository:</b> <a href=\"https://github.com/aimal-khan/edge-model-compression\" color=\"#0000ee\"><u>https://github.com/aimal-khan/edge-model-compression</u></a>"
     )
     story.append(Paragraph(meta_text, subtitle_style))
     story.append(HRFlowable(width="100%", thickness=1.5, color=colors.HexColor("#000000"), spaceAfter=10))

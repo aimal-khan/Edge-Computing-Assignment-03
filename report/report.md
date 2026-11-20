@@ -4,7 +4,7 @@
 **Course**: Edge Computing & Intelligent Systems  
 **Author**: Aimal Khan (`i211701`, Section `A`)  
 **Evaluation Platform**: Apple M1 (8-core ARM64 CPU, 16 GB Unified Memory)  
-**GitHub Repository**: [aimal-khan/Edge-Computing-Assignment-03](https://github.com/aimal-khan/Edge-Computing-Assignment-03)  
+**GitHub Repository**: [aimal-khan/edge-model-compression](https://github.com/aimal-khan/edge-model-compression)  
 **Deliverable Archive**: `i211701_A.zip`  
 
 ---
